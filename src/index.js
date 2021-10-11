@@ -1,8 +1,3 @@
-const color = {
-    red: 10,
-    green: 30,
-    blue: 33,
-    yellow: 15
-}
+const HttpError = require('./error/httpError');
 
-export default color;
+exports.HttpError = HttpError;
