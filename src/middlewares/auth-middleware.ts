@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
-import HttpError from '../error/HttpError';
+import { HttpError } from '../error/HttpError';
 
 interface JwtPayloadProps extends JwtPayload {
     userId: string;
@@ -16,7 +16,7 @@ declare global {
     }
 }
 
-const checkAuth = (req: Request, res: Response, next: NextFunction) => {
+export const checkAuth = (req: Request, res: Response, next: NextFunction) => {
     if(req.method==='OPTIONS') {
         return next();
     }
@@ -36,5 +36,3 @@ const checkAuth = (req: Request, res: Response, next: NextFunction) => {
         return next(new HttpError('Auth failed', 401));
     }
 }
-
-export default checkAuth;
