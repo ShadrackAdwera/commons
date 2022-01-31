@@ -1,5 +1,2 @@
-interface Color {
-    blue: string;
-    red: string;
-}
-declare const newColor: Color;
+export * from './error/HttpError';
+export * from './middlewares/auth-middleware';

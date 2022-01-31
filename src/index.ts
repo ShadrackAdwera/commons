@@ -1,11 +1,3 @@
-interface Color {
-    blue: string,
-    red: string
-}
+export * from './error/HttpError';
+export * from './middlewares/auth-middleware';
 
-const newColor: Color = {
-    blue: '#0000FF',
-    red: '#FF0000'
-}
-
-console.log(newColor);
