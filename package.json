@@ -2,9 +2,10 @@
   "name": "@adwesh/common",
   "version": "1.0.5",
   "description": "shared code between microservices",
-  "main": "index.js",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
   "files": [
-    "src/**/*"
+    "build/**/*"
   ],
   "scripts": {
     "clean": "del ./build/*",
