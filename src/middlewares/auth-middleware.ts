@@ -30,7 +30,7 @@ export const checkAuth = (req: Request, res: Response, next: NextFunction) => {
 
   try {
     decodedToken = <JwtPayloadProps>jwt.verify(token, process.env.JWT_KEY!);
-    req.user = { userId: decodedToken.userId, email: decodedToken.email };
+    req.user = { userId: decodedToken.id, email: decodedToken.email };
     next();
   } catch (error) {
     return next(new HttpError("Auth failed", 401));
