@@ -13,6 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./error/HttpError"), exports);
 __exportStar(require("./middlewares/auth-middleware"), exports);
 //nats
+__exportStar(require("./utils/nats-wrapper"), exports);
 __exportStar(require("./events/base-listener"), exports);
 __exportStar(require("./events/base-publisher"), exports);
 __exportStar(require("./events/subjects"), exports);
