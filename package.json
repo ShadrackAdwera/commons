@@ -1,6 +1,6 @@
 {
   "name": "@adwesh/common",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "shared code between microservices",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
